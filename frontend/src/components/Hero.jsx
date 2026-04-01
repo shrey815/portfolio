@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, ChevronDown, Github, Linkedin } from 'lucide-react';
 import { Link } from 'react-scroll';
+import cv from '../assets/CV.pdf';
 
 const Hero = () => {
   return (
@@ -65,7 +66,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="/resume.pdf"
+            href={cv}
             download="Shreya_Choudhary_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
